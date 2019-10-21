@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>YOUTUBE PROYECTO</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	 <script src="script.js"> </script>
+</head>
+<body   onload="iniciar()" >
+	
+<header>
+				<!----------->
+					<input type="checkbox" id="btn-menu">
+					<label for ="btn-menu"> <img width="20px" height="20px" src="img/menu.png" alt="";>
+					</label>
+
+					<img id="youtube" width="90" height="85"src="img/youtube.png" alt="";>
+					<label id="buscar" for ="youtube"> <img width="20px" height="20px" src="img/buscar.png" alt="";>
+					</label>
+
+					<a href=""><img id="camara" width="25px" height="25px" src="img/camara.png" alt="";></a>
+					<a href=""><img id="cuadrados" width="25px" height="25px" src="img/cuadrados.png" alt="";></a>
+					<a href=""><img id="notificacion" width="25px" height="25px" src="img/notificacion.png" alt="";></a>
+
+					<input type="search" id="input-search">
+				<!----------->
+				<nav class="menu">
+
+					<input type="checkbox" id="btn-menu">
+					<label for ="btn-menu"> <img width="20px" height="20px" src="img/menu.png" alt="";>
+					</label>
+
+					<img id="youtube" width="90" height="85"src="img/youtube.png" alt="";>
+
+					<ul>
+					<li><a href="" style="color:#000000;"><img width="20px" height="20px" src="img/inicio.png" alt="";> Início</a></li>
+					<li><a href="" style="color:#000000;"><img width="20px" height="20px" src="img/fuego.png" alt="";> En alta</a></li>
+					<li id ="separador"><a href="" style="color:#000000;"><img width="20px" height="20px" src="img/inscripcion.png" alt="";> Inscripciones</a></li>
+					<li><a href="" style="color:#000000;"><img width="20px" height="20px" src="img/carpeta.png" alt="";> Biblioteca</a></li>
+					<li><a href="" style="color:#000000;"><img width="20px" height="20px" src="img/historico.png" alt="";> Historial</a></li>
+					<li><a href="" style="color:#000000;"><img width="20px" height="20px" src="img/reloj.png" alt="";> Ver más tarde</li>
+					<li id ="separador" style="color:#000000;"><img width="20px" height="20px" src="img/like.png" alt="";> like</a></li>
+					<li><a href="" style="color:#000000;">suscripciones</a></li>
+					<li><a href="" style="color:#000000;"><img width="20px" height="20px" src="img/engranaje.png" alt="";> Configuraciones</a></li>
+					<li><a href="" style="color:#000000;"><img width="20px" height="20px" src="img/bandera.png" alt="";> Historico de denuncias</a></li>
+					<li><a href="" style="color:#000000;"><img width="20px" height="20px" src="img/ayuda.png" alt="";> Ayuda</a></li>
+					<li><a href="" style="color:#000000;"><img width="20px" height="20px" src="img/feedback.png" alt="";> Enviar feedback</a></li>
+					</ul>
+				</nav>
+	</header>
+
+	<div class="contenedor">
+        
+<!------PLAY INICIO---->  
+        <div class="play">
+        	<iframe id="play_original" width=100% height=400px src="https://www.youtube.com/embed/a_N9ViJubwM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+<!-------PLAY FINAL---->  
+       <!-------LISTA DE REPRODUCCION INICIO---------->
+        <div class="lista">
+        	<div class="barra-lista"><h3>Lista de reproduccion</h3>
+        		<a href=""><img id="agre-lista" width="32px" height="25px" src="img/agre-lista.png" alt="";></a>
+        	</div>
+
+		     <ul id="ul-ul" style="list-style-type: none;">
+				<li class="li-li" onclick="cambio(0)">
+				<div class="caja" id="c1"></div>
+				<h3>The Metaphysiscs of Inceptio - Engaging Ontological</h3> <p>Like Stories of Old</p>
+				<p>147 mil visualizaciones</p>	
+				</li>
+
+				<li class="li-li"onclick="cambio(1)">
+				<div class="caja" id="c2"></div>
+				<h3>What Makes a Great King?</h3> <p>Like Stories of Old</p>
+				<p>180 mil visualizaciones</p>	
+				</li>
+
+				<li class="li-li"onclick="cambio(2)">
+				<div class="caja" id="c3"></div>
+				<h3>Transcendendo o tempo</h3> <p>Like Stories of Old</p>
+				<p>980.600 visualizaciones</p>	
+				</li>
+
+				<li class="li-li"onclick="cambio(3)">
+				<div class="caja" id="c4"></div>
+				<h3>Gladiator | Turning Spectacle into a Meaningful Story</h3> <p>Like Stories of Old</p>
+				<p>108.256 visualizaciones</p>	
+				</li>
+				
+				<li class="li-li"onclick="cambio(4)">
+				<div class="caja" id="c5"></div>
+				<h3>Prometheus & Covenant</h3> <p>Like Stories of Old</p>
+				<p>199.752 visualizaciones</p>	
+				</li>
+			</ul>	
+
+		</div>
+<!-------LISTA DE REPRODUCCION FIN---------->
+
+
+        <div class="play-datos">
+        	<h3>40. Programación en C++ || Cadenas || Introducción a las cadenas de caracteres</h3>
+			<div id="visual"><pre >181.201 visualizaciones•1 may. 2016.........</pre></div>
+
+				<pre><button onclick="meGusta()" id="icono"><img src="imgs/captura1.png" id="captura1" ></button><span id="contad1"> 7000</span> <button onclick="nomeGusta()" id="icono"><img src="imgs/captura2.png" id="captura1" ></button id="icono"><span id="contad2"> 50</span> <button id="icono"><img src="imgs/compartir.png" id="captura2" width="20px" >Compartir</button>  <button id="icono"><img src="imgs/guardar.png" id="captura2" width="20px">Guardar</button>  <button id="icono"><img src="imgs/otros.png" id="captura1"></button></pre>
+				<!-----DESDE AQUI--------------->
+			<div >
+					<img src="imgs/logo_ATS.jpeg" id="logo_ATS">
+		<div >
+			
+				<p id="datos_mostraryocultar"></p>
+				<button onclick="mostrar_ocultar()"  id="mostrar_ocultar">MOSTRAR</button>
+
+			</div>
+
+			</div>
+			<!---------------------------HASTA AQUI--->
+        </div>
+        <div class="publicidad">
+        	<div id="propaganda">
+				<button class="cerrar" onclick="cerrar()">X</button>
+				<img id="m" src="imgs/anuncio1.png">
+
+				</div>
+		</div>   
+		<!-------SUGERENCIAS---->     
+		<div class="recomendados">
+			<div onclick="intercambiar(0)" >
+				<img src="imgs/coscuella.png" >
+
+			</div>
+
+			<div onclick="intercambiar(1)">
+				<img src="imgs/eddy_lover.png" >
+			</div>
+
+			<div onclick="intercambiar(2)">
+				<img src="imgs/me_mentiste.png" >
+			</div>
+
+			<div onclick="intercambiar(3)">
+				<img src="imgs/lograre_olvidarte.png" >
+				
+			</div>
+			<!-----------
+			<div>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/oiGCL2Ld534" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/JOk3JwyAHSI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/hmkSsR0cwoY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/6AaNfYxprlM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			------------------------------------------->
+			<!----------ROMARIO ROMARIO---------->
+        </div>
+        <div class="comentarios"><!--COMENTARIOSSS-->
+        	<img src="imgs/usuario.png" width="50px" height="60px"><input type="search" id="comentarios">
+		 	<button id="icono"><img src="imgs/cancelar.png" height="30px" id="captura2"></button> <button id="icono"><img src="imgs/comentar.png" height="30px" id="captura2"></button> <button id="icono"><img src="imgs/otros.png" id="captura1"></button></pre>
+	 		<section>
+	 			<img src="imgs/jimy.jpg" width="50px" height="60px"><h6>jimy  peralta</h6>
+	 			<span class="date">10/11/2019</span> 
+	 			<span class="time">20:15</span>
+	 			<h6>como puedo acceder a tus cursos virtuales me puede brindar mas informacion</h6>
+	 			<pre><button onclick="meGusta()" id="icono"><img src="imgs/captura1.png" id="captura1" ></button><span id="contad1"> 7</span> <button onclick="nomeGusta()" id="icono"><img src="imgs/captura2.png" id="captura1" ></button id="icono"><span id="contad2"> 5</spa>
+	 			</section>
+	 			<section>
+	 			<img src="imgs/neyser.jpg" width="50px" height="60px"><h6>neyser puma</h6>
+	 			<span class="date">10/11/2019</span> 
+	 			<span class="time">20:15</span>
+	 			<h6>que cursos de promacion mas dispones</h6>
+	 			<pre><button onclick="meGusta()" id="icono"><img src="imgs/captura1.png" id="captura1" ></button><span id="contad1"> 2</span> <button onclick="nomeGusta()" id="icono"><img src="imgs/captura2.png" id="captura1" ></button id="icono"><span id="contad2"> 5</span> 
+	 			</section>
+				 <section>
+			 	<img src="imgs/yeni.jpg" width="50px" height="60px"><h6>yeni villa real</h6>
+			 	<span class="date">10/11/2019</span> 
+			 	<span class="time">20:15</span>
+			 	<h6>como puedo acceder a tus cursos virtuales me puede brindar mas informacion sobre de c </h6>
+			 	<pre><button onclick="meGusta()" id="icono"><img src="imgs/captura1.png" id="captura1" ></button><span id="contad1"> 7000</span> <button onclick="nomeGusta()" id="icono"><img src="imgs/captura2.png" id="captura1" ></button id="icono"><span id="contad2"> 50</span> 
+			 	</section>
+			 	<section>
+			 	<img src="imgs/ruth.jpg" width="50px" height="60px"><h6>ruth mendoza</h6>
+			 	<span class="date">10/11/2019</span> 
+			 	<span class="time">20:15</span>
+			 	<h6>como puedo acceder a tus cursos virtuales me puede brindar mas informacion y los precios que dispone el curso</h6>
+			 	<pre><button onclick="meGusta()" id="icono"><img src="imgs/captura1.png" id="captura1" ></button><span id="contad1"> 7000</span> <button onclick="nomeGusta()" id="icono"><img src="imgs/captura2.png" id="captura1" ></button id="icono"><span id="contad2"> 50</span> 
+			 	</section>
+        </div>
+        
+
+
+    </div>
+</body>
+</html>

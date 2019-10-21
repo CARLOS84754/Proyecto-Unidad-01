@@ -1,0 +1,500 @@
+body{
+  margin:0;
+  background: #EAEAEA;
+  font-family: sans-serif;
+  color: #000000;
+ }
+
+ header{
+
+  width:100;
+  height: 40;
+  background: #fff;
+  position: relative; /*active el position absoule del ".menu"*/
+
+ }
+ /*--------------------------------------*/
+ #btn-menu{
+  display:none;/*esto desaparece el checkbock*/
+ }
+
+ header label{
+  display: block;/*"display:block;"-->mantiene la imagen menu, y el display:block lo desaparece*/
+  width:2.5%;
+  height:100%;
+  padding:20px;
+  padding-left: 24px;
+ }
+ header label:hover{/*hover activa mouse enciam*/
+  cursor:pointer;
+ 
+  
+  border-right: rgba(0,0,0,0.3);
+
+ }
+  /*--------------------------------------*/
+  #youtube{
+
+    position: absolute;
+    top: -14px;
+    left: 58px;
+  }
+
+  /*-----------------------------------------------------------------------*/          
+
+#buscar{
+position:absolute;
+top:4%;
+left:62%;
+
+}
+#camara{
+  position:absolute;
+  display: block;
+ 
+top:33%;
+left:78%;
+}
+#cuadrados{
+  position:absolute;
+  display: block;
+top:33%;
+left:83%;
+}
+#notificacion{
+  position:absolute;
+  display: block;
+top:33%;
+left:88%;
+}
+/*-----------------------------------------------------------------------*/   
+  #input-search{
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 23%;
+    width: 40%;
+    height: 40%;
+    font-size: 15px;
+    text-indent: 10px;
+  }
+  #comentarios{
+     #input-search{
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 23%;
+    width: 40%;
+    height: 40%;
+    font-size: 15px;
+    text-indent: 10px;
+  }
+  }
+    #visual{
+      display:block;
+
+    }
+
+  .menu{
+    font-family: sans-serif;
+    font-size: 15px;
+    color: black;
+
+
+    position: absolute; /*hace que el menu que esta extendido no lo este mas*/
+    background: #fff;
+    margin-left: -70%;
+    transition: all 0.2s;
+
+    position: absolute;
+    top: 0px;
+    
+  }
+  .menu ul{
+    margin: 0;
+    list-style: none;/*desaparece las viñetas*/
+    padding:0;
+    flex-direction: column;
+ 
+  }
+  .menu li{
+    border-top: 1px solid #fff;
+   
+  }
+
+  }
+  .menu li:hover{
+    background: rgba(0,0,0,0.3);
+  }
+  .menu li a{
+
+    display:block;
+    padding:15px 20px;
+    text-decoration: none; /*desaparece la raita que indica que es un link*/
+  }
+  #separador{
+    border-bottom: 1px solid #EAEAEA;
+    
+  }
+
+#btn-menu:checked ~.menu {/*osea cuando la cajita este seleccionado, busca la clase menu "~.menu"*/
+  margin:0;
+
+}
+.contenedor{
+    width: 100%;
+    height: 100%;
+    border: 0px solid black;
+}
+pre{
+	color: #CAC7C7;
+}
+
+/*PLAY*/
+.play{
+   padding: 22px;
+   border: 0px;
+}
+/*PLAY DATOS*/
+.play-datos{
+   padding: 20px
+}
+#logo_ATS{
+  width: 100px;
+  height: 100px;
+}
+#boton_megusta{
+	
+}
+
+#menu_lista{
+	border: 1px solid;
+	padding: 2px;
+}
+#captura1{
+	width: 20px;
+	height: 20px;
+}
+#captuera2{
+	width: 30px;
+	height: 20px;	
+}
+#icono{
+  margin: 2px;
+  background-color: #EAEAEA;
+  border: 0px;
+}
+/*ESTOOOOOOOOOOOOOOOOOOOOOOO*/
+
+#mostrar_ocultar{
+      background-color: white;
+      color: ; 
+      border: 0px;
+
+    }
+  /*DFGHJKL*/
+ #contad2{
+  color: #000009;
+}
+#contad1{
+  color: #000009;
+}
+#m{
+	width: 100%;
+	height: 120px;
+}
+/*--------------------------------------------------------------*/
+#propagandaa{
+  width: 100px;
+  height: 100%;
+}
+.recomendados{
+
+}
+
+.comentarios{
+	
+
+}
+.publicidad{
+	
+}
+
+
+
+
+ 
+@media(min-width: 1000px){ /*modificado juan carlos*/
+  .contenedor{
+    display : grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat 1/4fr (5, 1fr);  
+  }
+  .menu{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .play{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+  }
+  .play-datos{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+  .comentarios{
+    grid-column-start: 1;
+
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+  }
+  .recomendados{
+    grid-column-start: 2;
+    grid-column-end: -1;
+    grid-row-start: 6;
+    grid-row-end: 7;
+  }
+  .publicidad{
+    grid-column-start: 2;
+    grid-column-end: -1;
+    grid-row-start: 5;
+    grid-row-end: 6;
+
+  }
+  .lista{
+    grid-column-start: 2;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: 5;
+
+  }
+}
+
+@media(max-width: 600px){
+
+              #input-search{
+              display: none;
+                           }
+
+              #visual{
+                display: none;
+              }
+         
+          }
+
+
+
+
+/*------------------ESTILOS DE LISTA DE REPRODUCCION INICIO----------------------------*/
+.barra-lista{
+  width: 100%;
+  height: 70px;
+  background: #C4C4C4;
+  position:relative;
+  
+}
+.barra-lista h3{
+ 
+  margin-bottom: 0px;
+  margin-left:12px;
+ color: absolute black;
+}
+#agre-lista{
+  position:absolute;
+  display: block;
+ 
+top:50%;
+left:90%;
+}
+
+
+.lista{
+  margin:0;
+  
+}
+
+
+#ul-ul{
+  padding:0px;
+  margin:0px;
+  height: 400px;
+  overflow: auto; /*barra de desplazamiento*/
+}
+
+.li-li{
+  padding: 0px;
+  margin-bottom: 6px;
+  position: all; 
+  border:2px;
+  width: 100%;
+  height: 102px;
+  padding-left: 12px;
+ padding-top: 6px;
+ 
+}
+/********************************************************/
+.caja{
+  position:relative; /*la caja se molda al li-li*/
+  width:190px;
+  height:102px;
+  float:left;  
+}
+          /**************************/
+
+#c1{
+  background: url(img-film/1.jpg);
+}
+#c1:hover{
+  
+  background: url(img-film/1.jpg);
+  animation: xxx 5s infinite;
+  
+}
+@keyframes xxx{
+    25%{
+    background: url(img-film/2.jpg);
+  }
+    50%{
+    background: url(img-film/3.jpg);
+  }
+    75%{
+    background: url(img-film/4.jpg);
+  }
+    90%{
+    background: url(img-film/5.jpg);
+  }
+}
+          /**************************/
+
+#c2{
+  background: url(img-film/6.jpg);
+}
+#c2:hover{
+  
+  background: url(img-film/6.jpg);
+  animation: xxy 5s infinite;
+  
+}
+@keyframes xxy{
+    25%{
+    background: url(img-film/7.jpg);
+  }
+    50%{
+    background: url(img-film/8.jpg);
+  }
+    75%{
+    background: url(img-film/9.jpg);
+  }
+    90%{
+    background: url(img-film/10.jpg);
+  }
+}
+          /**************************/
+
+#c3{
+  background: url(img-film/11.jpg);
+}
+#c3:hover{
+  
+  background: url(img-film/11.jpg);
+  animation: xxz 5s infinite;
+  
+}
+@keyframes xxz{
+    25%{
+    background: url(img-film/12.jpg);
+  }
+    50%{
+    background: url(img-film/13.jpg);
+  }
+    75%{
+    background: url(img-film/14.jpg);
+  }
+    90%{
+    background: url(img-film/15.jpg);
+  }
+}
+          /**************************/
+
+#c4{
+  background: url(img-film/16.jpg);
+}
+#c4:hover{
+  
+  background: url(img-film/16.jpg);
+  animation: xyy 5s infinite;
+  
+}
+@keyframes xyy{
+    25%{
+    background: url(img-film/17.jpg);
+  }
+    50%{
+    background: url(img-film/18.jpg);
+  }
+    75%{
+    background: url(img-film/19.jpg);
+  }
+    90%{
+    background: url(img-film/20.jpg);
+  }
+}
+          /**************************/
+
+#c5{
+  background: url(img-film/21.jpg);
+}
+#c5:hover{
+  
+  background: url(img-film/21.jpg);
+  animation: xyz 5s infinite;
+  
+}
+@keyframes xyz{
+    25%{
+    background: url(img-film/22.jpg);
+  }
+    50%{
+    background: url(img-film/23.jpg);
+  }
+    75%{
+    background: url(img-film/24.jpg);
+  }
+    90%{
+    background: url(img-film/25.jpg);
+  }
+}
+/********************************************************/
+
+
+
+.li-li p {
+  position:relative;
+  line-height: 2px; /*espacio entre filas de letras*/
+  
+  margin-left:195px;
+  margin-top: 0px;
+  white-space: line;
+  color: #545454;
+}
+.li-li h3 {
+  position:relative;
+  line-height: 15px; /*espacio entre filas de letras*/
+  
+  margin-left:195px;
+  margin-top: 0px;
+  white-space: line;
+  color: absolute black;
+}
+
+
+  /*------------------ESTILOS DE LISTA DE REPRODUCCION FIN----------------------------*/
+
+
